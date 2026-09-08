@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payment-config
+  namespace: inno
+data:
+  MONGO_DATABASE: "paymentservice"
+  MONGODB_URI: "mongodb://payment-mongodb:27017/paymentservice"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+  API_GATEWAY_URL: "http://api-gateway:8080"
+  RANDOM_NUMBER_CLIENT_URL: "https://www.random.org"
+  USER_SERVICE_NAME: "user-service"
+  USER_SERVICE_URL: "http://user-service:8080"
+  KEYCLOAK_URL: "http://keycloak:8080"
+  KEYCLOAK_REALM: "Oauth"
+  KEYCLOAK_CLIENT_ID: "internal-client"
+  SERVER_PORT: "8084"
