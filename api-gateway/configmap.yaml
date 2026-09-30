@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-config
+  namespace: inno
+data:
+  USER_SERVICE_URL: "http://user-service:8080"
+  AUTH_SERVICE_URL: "http://auth-service:8081"
+  ORDER_SERVICE_URL: "http://order-service:8083"
+  PAYMENT_SERVICE_URL: "http://payment-service:8084"
+  KEYCLOAK_URL: "http://keycloak:8080"
+  KEYCLOAK_REALM: "Oauth"
+  KEYCLOAK_ISSUER_URI: "http://keycloak:8080/realms/Oauth"
+  KEYCLOAK_JWK_SET_URI: "http://keycloak:8080/realms/Oauth/protocol/openid-connect/certs"

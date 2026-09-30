@@ -1,0 +1,32 @@
+# ==== Kubernetes secrets ====
+secret.yaml
+
+# ==== Java / Maven ====
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==== Env files ====
+.env
+.env.*
+!.env.example
+
+# ==== IDE ====
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# ==== OS ====
+.DS_Store
+Thumbs.db
+
+# ==== Logs ====
+*.log
+logs/
+
+# ==== Docker ====
+docker-compose.override.yaml
